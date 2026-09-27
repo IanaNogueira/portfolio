@@ -1,0 +1,364 @@
+/*COR DA PÁGINA*/
+body {
+    background-color: #a3713c;
+}
+/*ANIMAÇÃO*/
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}  
+/*CABEÇALHO*/
+.cabecalho {
+    border-bottom: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 20px;
+}
+
+.menu {
+    font-size: large;
+    display: flex;
+    gap: 30px;
+    margin-left: auto;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+
+    color: #5e3911;
+    font-family: Georgia, serif;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.logoa h2 {
+    color: #fff
+}
+
+.logoa p {
+    margin-top: -12px;
+    margin-bottom: 25px;
+    font-size: small;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff
+}
+/*PÁGINA INICIAL*/
+.inicio {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    padding: 40px 20px;
+}
+
+.apresentacao {
+    font-family: serif;
+    font-size: x-large;
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+.apresentacao h1 {
+    color: #fff
+}
+
+.apresentacao h3 {
+    color: #522a18
+}
+
+.apresentacao p {
+    color: white
+}
+
+.foto img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 1000px;
+    border: 1px solid #c49a6c;
+}
+
+/*MENU*/
+.menu a {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 8px;
+    background-color: #db8a34;
+    color: #fff
+}
+
+.menu a:hover {
+    background-color: #fff;
+    color: #db8a34;
+}
+
+.botoes {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.botoes a {
+    display: inline-block;
+    padding: 16px 36px;
+    font-size: 19px;
+    background-color: #db8a34;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: 200;
+    transition: opacity 0.3s;
+}
+
+.botoes a:hover {
+    background-color: #fff;
+    color: #db8a34;
+}
+
+/*CARDS DA PÁGINA INICIAL*/
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    margin-top: 20px;
+}
+
+.cards img {
+    margin-top: 100px;
+    width: 270px;
+    height: 270px;
+    object-fit: contain;
+    background-color: #fff;
+    color: #fff;
+    border-radius: 5%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.575);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cards img:hover {
+    transform: translateY(-60px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/*SEÇÕES DA PÁGINA INICIAL*/
+.ferramentas,
+.tecnologias,
+.projetos {
+    border-top: 1px solid white;
+    padding-top: 50px;
+    margin-top: 50px;
+    font-family: serif;
+    text-align: center;
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+.ferramentas h1,
+.tecnologias h1,
+.projetos h1 {
+    font-size: 50px;
+    margin-top: 80px;
+    color: #fff;
+}
+
+.ferramentas h2,
+.tecnologias h2,
+.projetos h2 {
+    font-size: 30px;
+    color: #6b3e1e;
+}
+
+.lista-projetos {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 100px;
+}
+
+.card-projeto {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    width: 280px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.card-projeto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-projeto h3 {
+    font-size: xx-large;
+    color: #5e3911;
+    margin-bottom: 10px;
+}
+
+.card-projeto p {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.card-projeto a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #db8a34;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.card-projeto a:hover {
+    background-color: #5e3911;
+}
+
+/*RODAPÉ*/
+.rodape {
+    border-top: 1px solid #fff;
+    margin-top: 80px;
+    padding: 30px 20px;
+    text-align: center;
+    color: #fff;
+    font-family: serif;
+}
+
+.rodape p {
+    font-size: 20px;
+}
+
+
+/*SOBRE MIM*/
+.sobremim {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 20px;
+
+}
+
+.foto2 img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #c49a6c;
+}
+
+.sobreapresentar h1,
+.sobreapresentar h2 {
+    color: #fff;
+}
+
+.sobreapresentar p {
+    font-size: larger;
+    color: #fddca3;
+
+}
+
+/*CONTATO*/
+.contato {
+    animation: fadeInUp 0.8s ease-out forwards;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.contato h1 {
+    color: #fff;
+    font-family: serif;
+}
+
+.contato h2 {
+    color: #fddca3;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.redes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.redes h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #fff;
+    font-family: serif;
+    margin-bottom: 5px;
+}
+
+.redes h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #fddca3;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+/*CARDS DA PÁGINA DE CONTATOS*/
+.card-contato {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.card-contato:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-contato h3 {
+    color: #5e3911;
+    margin-bottom: 10px;
+}
+
+.card-contato p {
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.card-contato a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #db8a34;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.card-contato a:hover {
+    background-color: #5e3911;
+    color: #fff;
+}
